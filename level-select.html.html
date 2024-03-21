@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Level Select</title>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .level-card {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        .level-card:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: -30px;
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select a Level</h1>
+        <img src="https://celes.club/pictures/uploads/posts/2023-05/1685457262_celes-club-p-risunok-ostrov-risunok-krasivo-62.jpg" alt="Game Level" />
+
+        <a href="level1.html.html" class="level-card" data-tooltip="Start Level 1">Level 1</a>
+    
+        <a href="final-boss.html.html" class="level-card" data-tooltip="Face the Final Boss">Final Boss</a>
+    </div>
+</body>
+</html>
